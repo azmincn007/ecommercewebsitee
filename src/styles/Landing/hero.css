@@ -1,0 +1,44 @@
+/* Hero.css */
+
+.heromain {
+  width: 100%;
+    background-color: #0E1422;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .herocontent {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    padding: 0.5rem 0rem;
+
+    span{
+        cursor: pointer;
+    }
+  }
+  
+  .herocontent p {
+    /* Add any specific styles for the <p> tag */
+  }
+  
+  .herocontent span {
+    /* Add styles for the <span> tag inside .herocontent */
+  }
+  
+
+
+
+
+
+  @media (max-width: 499px) {
+    
+  
+    .herocontent {
+      font-size: 0.5rem; /* Example: Decrease font size for smaller screens */
+    }
+  }
+
+

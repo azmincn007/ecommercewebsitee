@@ -8,6 +8,8 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import Login from './authentications/Login'
 import Forgetpass from './authentications/Forgetpass'
 import Newpass from './authentications/Newpass'
+import Loading from './components/Loading/Loading'
+import Landing from './pages/Landing'
 const queryClient = new QueryClient();
 
 function App() {
@@ -17,11 +19,12 @@ function App() {
     <QueryClientProvider client={queryClient}>
 <BrowserRouter>
 <Routes>
-
-  <Route path='/' element={<Signup/>}/>
+<Route path='/' element={<Landing/>}/>
+  <Route path='/signup' element={<Signup/>}/>
   <Route path='/login' element={<Login/>}/>
   <Route path='/forgetpass' element={<Forgetpass/>}/>
   <Route path='/newpassword' element={<Newpass/>}/>
+  <Route path='/load' element={<Loading/>}/>
 
 </Routes>
 </BrowserRouter> 

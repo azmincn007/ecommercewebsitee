@@ -1,0 +1,204 @@
+.navbar{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.navbar .logoname{
+    font-family: var(--manrope);
+    font-weight: 900;
+}
+
+.navbar .left,.middle,.right{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+   .logo{
+    padding-right: 1rem;
+   }
+}
+
+
+.middle{
+    .midlecontents{
+       padding: 0rem 2.5rem;
+        font-family:var(--inter) ;
+        font-weight: 500;
+     color: var(--text-color);
+     
+        
+    }
+}
+
+.right{
+    div{
+        color: var(--text-color);
+        font-family:var(--inter) ;
+    }
+}
+
+.searchdiv{
+    display: flex;
+    align-items: center;
+    border: .5px solid #E6E7E8;
+    .searchicon {
+        
+        width: 30px;
+        height: 30px;
+        padding: 0.3rem 0.4rem;
+        
+    }
+}
+
+.cart-icon , .profile-icon{
+    width: 25px;
+    height: 25px;
+    padding: 0.3rem 3rem;
+}
+
+.searchp{
+    margin-right: 3rem;
+  
+}
+
+.middle-container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1200px) {
+    /* Your CSS rules for screens with a width of 1024px or less */
+    .middle
+        .midlecontents{
+            padding: 1rem;
+        }
+        .navbar{
+            width: 90%;
+        }
+    }
+
+    .cart-icon , .profile-icon{
+       
+        padding: 0.3rem 1.5rem;
+    }
+    
+    .searchp{
+        margin-right: 1.5rem;
+        font-size: 0.8rem;
+        min-width: 100px;
+      
+    }
+
+    .toggle-icon{
+        display: none;
+    }
+    
+  /* Styles for the .middle section when shown */
+
+    
+ 
+  
+/* media query*/
+
+  @media (max-width: 950px) {
+    /* Your CSS rules for screens with a width of 1024px or less */
+    .middle{
+        .midlecontents{
+            padding-right: 2rem;
+        }
+    }
+  }  
+
+
+  @media (max-width: 900px) {
+    .toggle-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+  
+    
+  
+    .middle.show .midlecontents, .right.show > div {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    /* Hide middle contents */
+
+    .middle.show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0; /* Position from the top of the viewport */
+        right: 0; /* Position from the right edge of the viewport */
+        width: 50%; /* Adjust width as needed */
+        height: 100%; /* Cover the entire viewport height */
+        background-color: #fff;
+        z-index: 100;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        overflow-y: auto; /* Enable vertical scrolling if needed */
+      }
+
+      .middle.show .midlecontents{
+        padding: 2rem 0;
+      }
+    .middle {
+      display: none;
+    }
+  
+    /* Adjust styles for right and toggle icon */
+    .right {
+      align-items: center; /* Align items vertically */
+      position: relative; /* Position relative to contain the toggle icon */
+    }
+  
+    /* Toggle Icon Styles */
+    .toggle-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--text-color);
+    }
+  
+    /* Adjust styles for left */
+    .left {
+      flex: 1; /* Take remaining space */
+    }
+  }
+
+  @media (max-width: 530px) {
+    .navbar{
+        width: 95%;
+    }
+
+    .right{
+        .searchicon {
+        
+            width: 20px;
+            height: 20px;
+            padding: 0.3rem 0.rem;
+            
+        }
+        .cart-icon , .profile-icon{
+            width: 15px;
+            height: 15px;
+            padding: 0.1rem 1rem;
+        }
+        
+}
+
+    
+  }
+  

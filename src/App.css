@@ -1,9 +1,24 @@
 :root {
   --poppins: "Poppins", sans-serif;
   --volkov: "Volkhov", serif;
-  --greyblack: #484848
+  --greyblack: #484848;
+  --manrope: "Manrope", sans-serif;
+  --inter:  "Inter", sans-serif;
+  --text-color: #7B7B7B;
+  
+  
 }
 
 .link{
   text-decoration: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  padding: 0;
+  margin: 0;
 }
