@@ -1,0 +1,143 @@
+
+.forgetpass {
+    height: 100vh;
+    display: flex;
+  }
+  
+  .forgetpass-image {
+    width: 50%;
+    height: 100%;
+    background: url('../assets/as.jpg');
+    background-size: cover;
+  }
+  
+  .forgetpass-container {
+    width: 50%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headforgetpass,
+  .forgetpass,
+  .but,
+  .alreadyacc {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: var(--poppins); /* Use CSS variable for font family */
+  }
+  
+   .inputs-forgetpass .input-field {
+    width: 100%;
+    padding: 3% 0rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid #ccc;
+    font-family: var(--poppins); /* Use CSS variable for font family */
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+  }
+  
+  .button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    width: 8rem;
+    outline: none;
+    height: 3rem;
+    border-radius: .4rem;
+    font-family: var(--poppins); /* Use CSS variable for font family */
+  }
+  
+  .inputs-forgetpass {
+    display: flex;
+    justify-content: center;
+  
+    padding: 2% 5%;
+  }
+  
+  .but {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    button{
+        width: 80%;
+    }
+  }
+  
+  .alreadyacc {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .alreadyacc .spanlog {
+    color: blue;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .fasco {
+    font-family: var(--volkov);
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: var(--greyblack);
+
+  }
+  
+
+  .titleofforgetpass{
+font-family: var(--poppins);
+font-size: 1.2rem;
+padding: 2% 0rem;
+color: var(--greyblack);
+  }
+
+h1{
+    padding: 0;
+    margin: 0;
+  }
+  /* Media query to hide image div on medium and extra-small screens */
+  @media screen and (max-width: 960px) {
+    .forgetpass-image {
+      display: none;
+    }
+  
+    .forgetpass-container {
+      width: 100%;
+  
+     
+    }
+  }
+
+  .inputs-forgetpass input:hover{
+    cursor: pointer;
+        border-bottom: 2px solid var(--greyblack);
+  }
+
+  .forgetfoot{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-family: var(--poppins);
+    font-size: 0.7rem;
+
+        span{
+          color: blue;
+        }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .titleofforgetpass{
+      padding: 1rem 0rem;
+      font-size: 1rem; /* Adjust the font size as per your preference for smaller screens */
+    }
+  }
+  

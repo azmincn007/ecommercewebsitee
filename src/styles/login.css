@@ -1,0 +1,175 @@
+
+.login {
+  height: 100vh;
+  display: flex;
+}
+
+.login-image {
+  width: 50%;
+  height: 100%;
+  background: url('../assets/login2.jpg');
+  background-size: cover;
+}
+
+.login-container {
+  width: 50%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headlogin,
+.forgetpass,
+.but,
+.alreadyacc {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: var(--poppins); /* Use CSS variable for font family */
+}
+
+ .inputlogin .input-field {
+  width: 100%;
+  padding: 3% 0rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none; 
+  border-bottom: 1px solid #ccc;
+  font-family: var(--poppins); /* Use CSS variable for font family */
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 8rem;
+  outline: none;
+  height: 3rem;
+  border-radius: .4rem;
+  font-family: var(--poppins); /* Use CSS variable for font family */
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  
+  padding: 2% 5%;
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+}
+
+.alreadyacc {
+  display: flex;
+  justify-content: center;
+}
+
+.alreadyacc .spanlog {
+  color: blue;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fasco {
+  font-family: var(--volkov);
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: var(--greyblack);
+
+}
+
+
+.titleoflogin{
+font-family: var(--poppins);
+font-size: 1.2rem;
+padding: 2% 0rem;
+color: var(--greyblack);
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+}
+/* Media query to hide image div on medium and extra-small screens */
+@media screen and (max-width: 960px) {
+  .login-image {
+    display: none;
+  }
+
+  .login-container {
+    width: 100%;
+
+   
+  }
+}
+
+.inputlogin input:hover{
+  cursor: pointer;
+      border-bottom: 2px solid var(--greyblack);
+}
+
+
+.forms{
+  width: 80%;
+}
+
+.buttonblack{
+  width: 100%;
+
+  button{
+    width: 100%;
+  }
+}
+
+.button-reg{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  cursor: pointer;
+  outline: none;
+  height: 3rem;
+  border-radius: .4rem;
+  font-family: var(--poppins);
+}
+
+.error-message{
+  color: red;
+}
+.afterform{
+width: 100%;
+
+}
+.loginfoot{
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-family: var(--poppins);
+  font-size: 0.7rem;
+  display: flex;
+justify-content: flex-end;
+
+
+      span{
+        color: blue;
+        cursor: pointer;
+      }
+}
+
+@media screen and (max-width: 450px) {
+  .titleoflogin {
+    padding: 1rem 0rem;
+    font-size: 0.8rem; /* Adjust the font size as per your preference for smaller screens */
+  }
+
+  
+}

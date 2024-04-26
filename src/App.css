@@ -1,0 +1,9 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --volkov: "Volkhov", serif;
+  --greyblack: #484848
+}
+
+.link{
+  text-decoration: none;
+}
