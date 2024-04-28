@@ -6,6 +6,10 @@
     padding: 1% 0;
 }
 
+.close-text{
+  display: none;
+}
+
 .navbar .logoname{
     font-family: var(--manrope);
     font-weight: 900;
@@ -62,6 +66,7 @@
 
 .searchp{
     margin-right: 3rem;
+    outline: none;
   
 }
 
@@ -89,9 +94,10 @@
     }
     
     .searchp{
-        margin-right: 1.5rem;
+        margin-right: 1.2rem;
         font-size: 0.8rem;
         min-width: 100px;
+        border: none;
       
     }
 
@@ -106,22 +112,51 @@
   
 /* media query*/
 
-  @media (max-width: 950px) {
-    /* Your CSS rules for screens with a width of 1024px or less */
-    .middle{
-        .midlecontents{
-            padding-right: 2rem;
-        }
-    }
-  }  
+
+
+
 
 
   @media (max-width: 900px) {
-    .toggle-icon {
+   .searchdiv{
+    border: none;
+   }
+
+   .close-text {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #999;
+    font-size: 10px;
+    display: flex;
+  }
+
+   .searchp{
+    display: none;
+    
+
+    
+   }
+     .cart-icon, .profile-icon, .menu-icon{
+      padding: 0rem 0.4rem;
+      width: 25px;
+      height: 25px;
+
+     }
+
+     .searchdiv .searchicon{
+      padding: 0rem 0.4rem;
+      width: 27px;
+      height: 27px;
+     }
+
+  
+     .toggle-icon {
       display: block;
       cursor: pointer;
-      font-size: 1.5rem;
-      margin-right: 1rem;
+      
+      
     }
   
     
@@ -129,10 +164,6 @@
     .middle.show .midlecontents, .right.show > div {
       padding: 0.5rem 1rem;
     }
-  }
-
-  @media (max-width: 900px) {
-    /* Hide middle contents */
 
     .middle.show {
         display: flex;
@@ -167,7 +198,6 @@
     .toggle-icon {
       display: block;
       cursor: pointer;
-      font-size: 1.5rem;
       margin-right: 1rem;
       color: var(--text-color);
     }
@@ -178,27 +208,6 @@
     }
   }
 
-  @media (max-width: 530px) {
-    .navbar{
-        width: 95%;
-    }
+ 
 
-    .right{
-        .searchicon {
-        
-            width: 20px;
-            height: 20px;
-            padding: 0.3rem 0.rem;
-            
-        }
-        .cart-icon , .profile-icon{
-            width: 15px;
-            height: 15px;
-            padding: 0.1rem 1rem;
-        }
-        
-}
-
-    
-  }
   

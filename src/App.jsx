@@ -10,6 +10,8 @@ import Forgetpass from './authentications/Forgetpass'
 import Newpass from './authentications/Newpass'
 import Loading from './components/Loading/Loading'
 import Landing from './pages/Landing'
+import Searchpage from './pages/Searchpage'
+import MobileNavbar from './pages/MobileNavbar'
 const queryClient = new QueryClient();
 
 function App() {
@@ -25,6 +27,11 @@ function App() {
   <Route path='/forgetpass' element={<Forgetpass/>}/>
   <Route path='/newpassword' element={<Newpass/>}/>
   <Route path='/load' element={<Loading/>}/>
+  <Route path='/searchpage' element={<Searchpage/>}/>
+  <Route path='/mobilenav' element={<MobileNavbar/>}/>
+
+  
+
 
 </Routes>
 </BrowserRouter> 

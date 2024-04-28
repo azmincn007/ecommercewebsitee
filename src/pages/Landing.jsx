@@ -7,7 +7,10 @@ function Landing() {
   return (
     <div className='landing'>
    <Hero/>
+   <div className="navbarland">
    <Navbar/>
+   </div>
+
     </div>
   )
 }

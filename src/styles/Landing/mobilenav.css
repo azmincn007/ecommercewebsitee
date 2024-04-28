@@ -1,0 +1,30 @@
+.mobile-navbar{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.backicon, .searchicon{
+    padding: 0.8rem 0.4rem;
+    width: 25px;
+    height: 25px;
+}
+
+.centermob{
+    padding: 0rem 0.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+
+    .searchmob{
+        border: none;
+        width: 90%;
+        outline: none;
+
+        
+    }
+    
+
+}

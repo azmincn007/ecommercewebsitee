@@ -128,8 +128,8 @@ function Signup() {
               <PasswordInput value={formData.password} onChange={handleInputChange}/>
             </Grid>
             <Grid item xs={12} lg={12}>
-              <PhoneInput value={formData.phone} onChange={handleInputChange} />
-            </Grid>
+"              <PhoneInput value={formData.phone} onChange={handleInputChange} />
+"            </Grid>
           </Grid>
 
           <div className="but">
